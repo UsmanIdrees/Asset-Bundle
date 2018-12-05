@@ -30,7 +30,8 @@ public class Downloader : MonoBehaviour {
 		if (AB != null) {
 			//Checking if Loaded data has some values
 			//Load Objects here
-			//Instantiate (GO);
+			GameObject GO = AB.LoadAsset("Bit Gun") as GameObject;
+			Instantiate (GO);
 		} else 
 		{
 			Debug.Log ("Asset Does Not Found");
